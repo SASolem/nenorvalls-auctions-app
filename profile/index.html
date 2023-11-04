@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/index.css" type="text/css" />
+    <title>AUCTIONS | Profile</title>
+  </head>
+
+  <body>
+    <!-- ========================== Header =================================== -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark py-3 px-4">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="/index.html">AUCTIONS</a>
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="/index.html"
+                >HOME</a
+              >
+              <a class="nav-link text-white" id="profile-link" href="/profile/"
+                >PROFILE</a
+              >
+              <a
+                class="nav-link text-white"
+                id="users-link"
+                href="/pages/users/"
+                >USERS</a
+              >
+              <a
+                class="nav-link text-white"
+                id="login-link"
+                href="/profile/login/"
+                >LOGIN</a
+              >
+              <a class="nav-link text-white" id="logout-link" href="/index.html"
+                >LOGOUT</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <hr />
+
+    <!-- =============================== MAIN ============================== -->
+
+    <main class="w-100 mx-auto bg-dark text-white">
+      <hr />
+      <div class="container-lg">
+        <div class="profilePage-section text-white text-center">
+          <h1>PROFILE</h1>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="col-md-12 profile-image text-center">
+                  <img
+                    src="/images/—Pngtree—elephant avatar_3194470.png"
+                    id="profile-avatar"
+                    alt="profileAvatar"
+                    width="200"
+                    class="mb-2 img-thumbnail"
+                  />
+                  <hr />
+                  <div
+                    id="profile-listing-container"
+                    class="text-center"
+                  ></div>
+                </div>
+
+                <div class="text-center">
+                  <button
+                    type="button"
+                    class="btn btn-secondary mt-2 mb-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    EDIT AVATAR
+                  </button>
+                </div>
+              </div>
+
+              <div class="col-md-9">
+                <div class="row">
+                  <div class="col-md-12 text-white">
+                    <div class="bg-light px-2 py-2 w-100">
+                      <div class="px-2 py-2 bg-dark">
+                        <h3 class="mb-0 text-center">About me</h3>
+                        <div class="d-flex text-center p-4">
+                          <ul class="list-inline mb-0 justify-content-end">
+                            <li class="list-inline-item bg-light rounded">
+                              <h5
+                                id="profile-credits"
+                                class="font-weight-bold mb-0 d-block text-black"
+                              >
+                                0
+                            </h5>
+                              <h5 class="text-muted text-center">Credits</h5>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="p-4 rounded shadow-sm bg-light text-black">
+                          <p id="email-for-profile-users" class="mb-0"></p>
+                          <p class="mb-0">Member</p>
+                          <p class="mb-0">Auctions Incorporation</p>
+                          <p class="mb-0">Lives in Bergen</p>
+                          <p class="mb-0">+47 010 90 000</p>
+
+                          <hr />
+                          <p class="text-black">
+                            Welcome to the auction house, we sell, buy, bid...
+                            name your price and auctions start! Enjoy! Feel free
+                            to contact us!
+                            <a class="link-info" href="/pages/contact.html"></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- ======================= MY LISTINGS ===================== -->
+          <div class="row">
+            <div class="py-2 px-2">
+              <div class="align-items-center justify-content-between mb-3">
+                <h3 class="mb-0 text-center">My Listings</h3>
+              </div>
+              <div>
+                <div id="container-for-listings" class="row thumbnail ">
+                  <img
+                    src="/images/—Pngtree—vector gallery icon_3989549.png"
+                    alt="Loading content"
+                    style="width: 200px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+      <!-- =============================== Modal ====================================== -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Place URL Media here
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-center mt-5">
+                <label for="profileAvatar">Avatar</label>
+                <textarea
+                  class="form-control form-control-lg m-auto"
+                  id="input-for-updateAvatar"
+                  placeholder="Place an avatar URL"
+                ></textarea>
+                <p class="" id="updateAvatar-message-for-profile"></p>
+                <div class="text-center"></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="button"
+                id="button-for-updating-avatar"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                CHANGE AVATAR
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ===================================== FOOTER ================================================ -->
+    <footer class="footer-section mt-auto">
+      <div class="bg-light py-2">
+        <div class="text-center">
+          <p class="mb-0 py-2 primary-text">
+            &copy; 2022 AUCTIONS | All rights reserved.
+          </p>
+          <p>Designed by: Nenorvalls</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/src/js/profile.js"></script>
+    <script src="/src/js/logout.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ====================== HOTJAR ========================== -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = {
+          hjid: 2859085,
+          hjsv: 6,
+        };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+.navbar-brand {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 38px;
+}
+
+.primary-text {
+  color: $primaryColor;
+}
+
+.secondary-text {
+  color: $secondaryColor;
+}
+
+.navbar-toggler {
+  color: $secondaryColor;
+}
+
+main {
+  min-height: 100vh;
+}
+
+// ============ card =============
+.card-body {
+  background-color: $primaryColor;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+// // ========== FOOTER ==========
+
+// .footer-section {
+//   position: fixed;
+//   left: 0;
+//   bottom: 0;
+//   height: auto;
+//   width: 100%;
+// }
+
+// ======== LOGIN ==========
+
+#loginSubmit,
+#registerSubmit,
+#submit-button-for-listings {
+  color: $secondaryColor !important;
+  background-color: #212529 !important;
+
+  &:hover {
+    color: $black;
+    background-color: $hoverColor !important;
+    border: 2px solid $secondaryColor !important;
+  }
+}
